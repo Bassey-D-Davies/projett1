@@ -1,15 +1,22 @@
+:root {
+  --primary-colour: rgb(236, 182, 113);
+  --secoundary-color: burlywood;
+  --teciary-color: brown;
+}
 * {
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
+
 .title {
   font-family: "Times New Roman";
   text-decoration: none;
   color: whitesmoke;
 }
-header {
+#main-header {
   display: flex;
   text-decoration: none;
   background: transparent;
@@ -34,15 +41,21 @@ header {
 }
 .ad {
   color: whitesmoke;
-  height: 300px;
-  justify-items: left;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px; /* Distance from the bottom */
+  right: 0px;
 }
 .ad-left {
-  align-content: last baseline;
-  justify-items: right;
+  color: whitesmoke;
+  justify-items: left;
   max-width: 400px;
   margin-bottom: 30px;
   line-height: 1.5;
+  position: absolute;
+  bottom: 0px; /* Distance from the bottom */
+  left: 0px;
 }
 .btn {
   color: brown;
@@ -51,7 +64,45 @@ header {
   justify-content: center;
   align-items: center;
 }
+.order {
+  height: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+}
 .backround2 {
   background-color: rgb(245, 235, 222);
   height: 500px;
+}
+.menu-section {
+  display: none;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu-open {
+  display: flex;
+}
+.menu-close {
+  display: none;
+}
+#main-header.scrolled {
+  background-color: #333333; /* Changes to dark gray */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.j {
+  font-size: 70px;
+}
+.top {
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  left: 0;
+}
+footer {
+  background: var(--teciary-color);
 }
