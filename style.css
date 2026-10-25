@@ -1,7 +1,7 @@
 :root {
   --primary-colour: rgb(236, 182, 113);
   --secoundary-color: burlywood;
-  --teciary-color: brown;
+  --teciary-color: rgba(246, 71, 7, 0.136);
 }
 * {
   justify-content: center;
@@ -75,7 +75,7 @@
 }
 .backround2 {
   background-color: rgb(245, 235, 222);
-  height: 500px;
+  height: 5000px;
 }
 .menu-section {
   display: none;
@@ -103,6 +103,39 @@
   text-align: center;
   left: 0;
 }
+.backround-last {
+  background-image: url(last-1457x669.jpeg);
+  height: 650px;
+  color: rgb(245, 235, 222);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.last-text {
+  font-size: 50px;
+}
 footer {
-  background: var(--teciary-color);
+  color: #f4efea;
+  background-color: rgb(58, 0, 0);
+  height: 550px;
+}
+.buttom {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+  display: flex;
+  flex-direction: row; /* Stacks the links vertically under each heading */
+  gap: 10px;
+  top: 0;
+  right: 0%;
+}
+.b1 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+.last {
+  font-size: 200px;
 }
